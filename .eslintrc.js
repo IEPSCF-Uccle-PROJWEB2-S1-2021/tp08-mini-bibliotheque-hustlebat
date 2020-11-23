@@ -9,6 +9,7 @@ module.exports = {
   extends: ['eslint:recommended', 'google', 'prettier'],
   parserOptions: {
     ecmaVersion: 12,
+    "sourceType": "module"
   },
   rules: {},
 };

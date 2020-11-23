@@ -4,8 +4,20 @@
     <title><%= title %></title>
     <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
+  <section>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <h1>The <%= title %>  </h1>
+    <h2>Welcome to my  <%= title %> app.</h2>
   </body>
+
+  <div>
+  <form action="/books/list" method="get">
+  <label for="search">Lancez votre recherche: auteur, tittre ou catégorie</label>
+  <input class="inpt" type="text" name="search" id="search" >
+  </form>
+<p>
+    <button class="sub" type="submit">Lancer recherche</button>
+  </p>
+</div>
+</section>
 </html>
